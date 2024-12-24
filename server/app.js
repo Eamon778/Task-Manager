@@ -2,18 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const router = require('./routes/router');
-const cors = require('cors');
 
 const app = express();
 
 app.use(express.json());
-app.use(cors(
-  {
-    origin: 'https://library-books-list.netlify.app/',
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
-    allowedHeaders: ['Content-Type']
-  }
-));
 
 app.use('/api', router);
 
