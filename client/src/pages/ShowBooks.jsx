@@ -11,7 +11,7 @@ function showBooks() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/books/${id}`)
+      .get(`https://book-list-fg3g.onrender.com/api/books/${id}`)
       .then((response) => {
         setBook(response.data.data);
         setLoading(false);

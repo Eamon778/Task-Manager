@@ -11,7 +11,7 @@ function DeleteBooks() {
   
   const deleteBook = async () => {
     try {
-      await axios.delete(`http://localhost:3000/api/books/${id}`)
+      await axios.delete(`https://book-list-fg3g.onrender.com/api/books/${id}`)
       navigate('/')
     } catch (error) {
       console.error(error)

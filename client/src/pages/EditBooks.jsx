@@ -14,7 +14,7 @@ function EditBooks() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:3000/api/books/${id}`)
+            .get(`https://book-list-fg3g.onrender.com/api/books/${id}`)
             .then((response) => {
                 setTitle(response.data.data.title)
                 setAuthor(response.data.data.author)

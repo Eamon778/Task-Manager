@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/books')
+      .get('https://book-list-fg3g.onrender.com/api/books')
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
